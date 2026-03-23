@@ -27,6 +27,8 @@ Think about which debugging methods you found most useful and how you might appl
 console.log("Welcome to the bootcamp
 
 // What’s Wrong?
+// its missing ")
+console.log("Welcome to the bootcamp");
 
 
 // Program B
@@ -40,7 +42,13 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 // What’s Wrong?
+// I need to changed "eight" to the number 8
+let numbers = [2, 4, 8];
 
+for (let i = 0; i < numbers.length; i++) {
+  let doubled = numbers[i] * 2;
+  console.log(doubled);
+}
 
 
 // Program C (Logic Error)
@@ -60,3 +68,20 @@ function isPrime(num) {
 console.log(isPrime(7)); // Expected true but gets false
 
 // What’s Wrong?
+// If divisible by i, it's NOT prime, so I need to return false instead of true.
+
+function isPrime(num) {
+  if (num < 2) return false;
+
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+      return false; 
+    }
+  }
+  return true; 
+}
+
+console.log(isPrime(7));
+
+//Reflection
+//Writing the simplest code that passes, then refactoring, is what helped me put things together.
