@@ -27,7 +27,7 @@ Think about which debugging methods you found most useful and how you might appl
 console.log("Welcome to the bootcamp
 
 // What’s Wrong?
-// its missing ")
+// Its missing ")
 console.log("Welcome to the bootcamp");
 
 
@@ -42,7 +42,7 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 // What’s Wrong?
-// I need to changed "eight" to the number 8
+// I need to change "eight" to the number 8
 let numbers = [2, 4, 8];
 
 for (let i = 0; i < numbers.length; i++) {
@@ -83,5 +83,5 @@ function isPrime(num) {
 
 console.log(isPrime(7));
 
-//Reflection
-//Writing the simplest code that passes, then refactoring, is what helped me put things together.
+// Reflection
+// Writing the simplest code that passes, then refactoring, is what helped me put things together.
